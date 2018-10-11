@@ -1,0 +1,85 @@
+<!--
+  Generated template for the FavoritesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Favorites</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  class="outer-content">
+    <ion-list>
+        <ion-card *ngFor="let ad of favoriteAdds">
+          <img src="assets/imgs/house1.jpg">
+          <ion-card-header text-center>
+  
+            <ion-title>{{ad.category}} for sale in {{ad.location}}</ion-title>
+            <ion-note>{{ad.uploaded_at | date:'fullDate'}}</ion-note>
+          </ion-card-header>
+  
+          <ion-item-group>
+            <ion-item>
+              Price
+              <div item-end>LKR {{ad.price}}</div>
+            </ion-item>
+            <div *ngIf="ad.category=='House'">
+              <ion-item>
+                Beds
+                <div item-end>{{ad.bedrooms}}</div>
+              </ion-item>
+              <ion-item>
+                Baths
+                <div item-end>
+                  {{ad.bathrooms}}
+                </div>
+              </ion-item>
+              <ion-item>
+                House size
+                <div item-end>
+                  -
+                </div>
+              </ion-item>
+            </div>
+  
+            <ion-item>
+              Land Size
+              <div item-end>
+                {{ad.land_size}}
+              </div>
+            </ion-item>
+          </ion-item-group>
+  
+  
+  
+          <ion-row>
+            <ion-col text-center>
+              <button ion-button clear icon-only text-center (click)="call(ad.contact)">
+                <ion-icon name="call"></ion-icon>
+                <!-- <div>12 Likes</div> -->
+              </button>
+            </ion-col>
+            
+            <ion-col text-center>
+              <button ion-button clear icon-only text-center (click)="openAddAppointment(ad)">
+                <ion-icon name="calendar"></ion-icon>
+                <!-- <div>4 Comments</div> -->
+              </button>
+            </ion-col>
+            <ion-col text-center>
+              <button ion-button clear icon-only text-center (click)="removeFromFavorite(ad)">
+                  <ion-icon name="trash"></ion-icon>
+                <!-- <div>4 Comments</div> -->
+              </button>
+            </ion-col>
+          </ion-row>
+  
+        </ion-card>
+  
+      </ion-list>
+</ion-content>

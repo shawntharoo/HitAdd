@@ -1,0 +1,46 @@
+
+$muli-font-path: $font-path !default;
+
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Muli Regular'),local("Muli-Regular"),
+        url("#{$muli-font-path}/Muli_200_normal.woff") format('woff'),
+        url("#{$muli-font-path}/Muli_200_normal.ttf") format('truetype');
+    
+}
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Muli Regular'),local("Muli-Regular"),
+        url("#{$muli-font-path}/Muli_300_normal.woff") format('woff'),
+        url("#{$muli-font-path}/Muli_300_normal.ttf") format('truetype');
+    
+}
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Muli Regular'),local("Muli-Regular"),
+        url("#{$muli-font-path}/Muli_400_normal.woff") format('woff'),
+        url("#{$muli-font-path}/Muli_400_normal.ttf") format('truetype');
+    
+}
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Muli Bold'),local("Muli-Bold"),
+        url("#{$muli-font-path}/Muli_700_normal.woff") format('woff'),
+        url("#{$muli-font-path}/Muli_700_normal.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Muli extra-bold'),local("Muli-extra-bold"),
+        url("#{$muli-font-path}/Muli_800_normal.woff") format('woff'),
+        url("#{$muli-font-path}/Muli_800_normal.ttf") format('truetype');
+}

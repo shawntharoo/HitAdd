@@ -1,0 +1,50 @@
+page-home {
+    font-family: 'Muli', sans-serif !important;
+    #top-banner {
+        background: url(../assets/imgs/imgentry.jpg) no-repeat center center; // -webkit-background-size: contain;
+        // -moz-background-size: contain;
+        // -o-background-size: contain;
+        // background-size: contain;
+        color: #fff;
+        text-align: center;
+        height: 300px;
+        h1 {
+            font-weight: 700 !important;
+            letter-spacing: 4px;
+        }
+        .banner-content {
+            padding-top: 20%;
+            position: relative;
+            .tag-line {
+                margin-top: 50px;
+                display: block;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 3px;
+                width: 100%;
+            }
+            #start-button {
+                width: 180px;
+                padding: 10px;
+                margin: 0 auto;
+                // background-color: #d9352f;
+                color: #fff;
+                margin-top: 50px;
+                margin-top: 50px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                font-size: 16px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            }
+        }
+    }
+    .content-wrap{
+        padding:10px;
+    }
+    ion-content {
+        .scroll-content {
+            padding: 0 !important;
+        }
+    }
+}

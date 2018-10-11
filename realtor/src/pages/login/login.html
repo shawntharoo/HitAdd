@@ -1,0 +1,47 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <!-- <ion-navbar>
+    <ion-title>Sign in</ion-title>
+  </ion-navbar> -->
+
+</ion-header>
+
+
+<ion-content scroll="false">
+  <div class="content-wrapper">
+    <div class="logo">
+      <span>realtor</span>
+    </div>
+    <ion-item>
+      <ion-label floating>Phone number</ion-label>
+      <ion-input type="number" [(ngModel)]="user.phone_number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    <div padding>
+      <button ion-button color="red" block (click)="login()">Sign In</button>
+    </div>
+
+    <div padding id="nUser">
+      <span>New user?</span>
+    </div>
+    <div padding>
+      <button ion-button color="light" block (click)="openSignup()">Sign Up</button>
+    </div>
+
+    <div padding id='forgotDetails'>
+      <span>Forgot your login details?</span>
+      <a href="#">Get help signing in</a>
+    </div>
+  </div>
+
+</ion-content>

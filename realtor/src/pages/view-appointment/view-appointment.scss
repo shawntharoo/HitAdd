@@ -1,0 +1,16 @@
+page-view-appointment {
+    .app-line-container{
+        display:flex;
+        justify-content: space-between;
+        margin-top:5px;
+        p{
+            font-size:1.6rem;
+        }
+    }
+    .comments{
+        display:block;
+        p{
+            text-align:justify;
+        }
+    }
+}

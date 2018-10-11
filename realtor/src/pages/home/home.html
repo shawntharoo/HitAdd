@@ -1,0 +1,57 @@
+<ion-content padding>
+  <div id="top-banner">
+    <div class="banner-content">
+      <h1>DISCOVER</h1>
+      <span class="tag-line">Let's discover your dream home</span>
+      <button ion-button id="start-button" color="red" (click)="startReqCapture()">Start</button>
+    </div>
+
+  </div>
+
+  <div class="content-wrap">
+    <ion-title>
+      Top Picks
+    </ion-title>
+    <ion-slides loop='true' pager='true' paginationType='bullets'>
+      <ion-slide *ngFor="let add of topAds">
+        <ion-card>
+
+          <img src="assets/imgs/house1.jpg" />
+            <ion-card-title>
+              {{add.category}} in {{add.location}}
+            </ion-card-title>
+          <ion-card-content text-wrap>
+            <p>
+                {{(add.description.length>6)? (add.description | slice:0:160)+'....':(add.description)}}
+            </p>
+          </ion-card-content>
+
+          <ion-row no-padding>
+            <ion-col>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='star'></ion-icon>
+                Favorite
+              </button>
+            </ion-col>
+            <!-- <ion-col text-center>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='musical-notes'></ion-icon>
+                Listen
+              </button>
+            </ion-col> -->
+            <ion-col text-right>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='share-alt'></ion-icon>
+                Share
+              </button>
+            </ion-col>
+          </ion-row>
+
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+
+
+  </div>
+
+</ion-content>
